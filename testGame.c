@@ -6,3 +6,22 @@
 #include <stdlib.h>
 #include <assert.h>
 #include "Game.h"
+
+int main () {
+
+    printf("testing new game\n");
+    Game g = newGame();
+    printf("passed");
+
+    printf("testing makeAction");
+    makeAction(g,a);
+    assert()
+
+
+
+
+
+
+
+    return EXIT_SUCCESS;
+}
