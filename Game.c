@@ -7,19 +7,18 @@
 #include <assert.h>
 #include "Game.h"
 
-
 typedef struct _game * Game {
     int currentTurn; //saves the current turn of the game
     int currentPlayer; //saves the current player
     int regionID; //ID of each hexagon tiles
-    int vertex; //co-ordinates of each hexagon tile's corner from 0 - 5
-    int axis;
-} game;
+    int axis; //map of the game board
+} Game;
 
 typedef struct _regionID {
     int disciplineCode; //type of students produced
     int diceValue; // dice value to produce students
-    int edge; //edges for ARCs
+    int ARC; //edges for ARCs
+    int vertex; //corners of tile from 0 - 5
 } regionID;
 
 typedef struct _axis {
