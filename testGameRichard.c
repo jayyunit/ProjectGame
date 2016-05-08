@@ -54,9 +54,8 @@ int main () {
     assert (test.currentTurn == 0);
     printf("Test passed for throwDice");
 
-    printf("Testing getDiscipline")
-    getDiscipline (test, 0);
-    assert(test.disciplines == STUDENT_BQN);
+    printf("Testing getDiscipline");
+    assert(if(getDiscipline(test, 0) == STUDENT_BQN) == TRUE);
     printf("Test passed for getDiscipline")
 
     printf("Testing getDiceValue")
